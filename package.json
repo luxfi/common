@@ -1,0 +1,58 @@
+{
+  "name": "@luxfi/common",
+  "version": "0.3.60",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist"
+    },
+    "./dist/chain-data": {
+      "default": "./dist/chain-data.js"
+    },
+    "./dist/index-mainsite": {
+      "import": "./dist/index-mainsite.js",
+      "require": "./dist/index-mainsite.js",
+      "default": "./dist/index-mainsite.js"
+    },
+    "./dist/index-lux": {
+      "import": "./dist/index-lux.js",
+      "require": "./dist/index-lux.js",
+      "default": "./dist/index-lux.js"
+    },
+    "./dist/index-luxdesktop": {
+      "import": "./dist/index-luxdesktop.js",
+      "require": "./dist/index-luxdesktop.js",
+      "default": "./dist/index-luxdesktop.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:d": "jest --verbose",
+    "build:d": "tsc",
+    "build": "rm -rf dist && mkdir -p dist/assets && cp -r src/assets dist && tsc",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeBankDeFi/fe-common.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeBankDeFi/fe-common/issues"
+  },
+  "homepage": "https://github.com/DeBankDeFi/fe-common#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {}
+}
