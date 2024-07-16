@@ -1,6 +1,6 @@
 {
   "name": "@luxfi/common",
-  "version": "0.3.60",
+  "version": "0.3.61",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,10 +33,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "test:d": "jest --verbose",
-    "build:d": "tsc",
-    "build": "rm -rf dist && mkdir -p dist/assets && cp -r src/assets dist && tsc",
-    "prepublishOnly": "npm run build && npm run test"
+    "test:d": "jest --verbose"
   },
   "repository": {
     "type": "git",
