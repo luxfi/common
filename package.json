@@ -1,6 +1,6 @@
 {
-  "name": "@luxfi/common",
-  "version": "1.8.15",
+  "name": "@luxwallet/common",
+  "version": "1.8.16",
   "description": "[![NPM version](https://img.shields.io/npm/v/@debank/common.svg)](https://www.npmjs.org/package/@debank/common) [![Build Status][actions-image]][actions-url]",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
